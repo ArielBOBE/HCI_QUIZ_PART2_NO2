@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        img {
+            width: 50%;
+        }
+        
+    </style>
+    <script>
+        $(document).ready(function(){
+                $("#portfolio").click(function(){
+                    $(".portfolio").show();
+                    $(".Jquery").hide();
+                    $(".Other").hide();})
+                $("#other").click(function(){
+                    $(".portfolio").hide();
+                    $(".Jquery").hide();
+                    $(".Other").show();})
+                $("#Jquery").click(function(){
+                    $(".portfolio").hide();
+                    $(".Jquery").show();
+                    $(".Other").hide();})
+                });
+    </script>
+</head>
+<body>
+    <div><h1>My portfolio projects</h1>
+    <label><a href="index.html">My gallery</a></label>
+    </div>
+    <br>
+    <div>
+        <button id="portfolio">portfolios</button>
+        <button id="other">others</button>
+        <button id="Jquery">jquery</button>
+    </div>
+    <div>
+        <a class="portfolio" href="https://arielbobe.github.io/Human-Computer-Interaction/">Portfolio1</a>
+        <a class="portfolio" href="https://arielbobe.github.io/HCI-ASSIGNMENT-05/">portfolio2</a>
+        <a class="Jquery" href="https://arielbobe.github.io/HCI-ASSIGNMENT-06/">Jquery</a>
+        <a class="Other" href="https://arielbobe.github.io/HCI-ASSIGNMENT-02/">Other</a>
+    </div>
+</body>
+</html>
