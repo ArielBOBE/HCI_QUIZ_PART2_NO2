@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        img {
+            width: 50%;
+        }
+        
+    </style>
+    <script>
+        $(document).ready(function(){
+                $("#ariel").click(function(){
+                    $(".ariel").show();
+                    $(".cat").hide();
+                    $(".friends").hide();})
+                $("#cat").click(function(){
+                    $(".ariel").hide();
+                    $(".cat").show();
+                    $(".friends").hide();})
+                $("#friends").click(function(){
+                    $(".ariel").hide();
+                    $(".cat").hide();
+                    $(".friends").show();})
+                });
+    </script>
+</head>
+<body>
+    <div><h1>My portfolio gallery</h1>
+    <label><a href="projects.html">My projects</a></label>
+    </div>
+    <br>
+    <div>
+        <button id="ariel">Ariel</button>
+        <button id="cat">Cats</button>
+        <button id="friends">Friends</button>
+    </div>
+    <div>
+        <img class="cat" src="https://cdn.discordapp.com/attachments/406823279555510272/1174730030128046133/20231116_221717.jpg?ex=6571e218&is=655f6d18&hm=a37aebe7bf83d7c40f7b97d3f5240e7c61c12dcc1e3e3b7cc841655d5a88e229&">
+        <img class="ariel" src="https://cdn.discordapp.com/attachments/406823279555510272/1179641955211280464/image.png?ex=657a862e&is=6568112e&hm=0f35c0f7fe5f98feac6e045a3f12253e4bfe011495cce3f742abf3b372b89ff4&">
+        <img class="friends"src="https://cdn.discordapp.com/attachments/406823279555510272/1179642410846933002/image.png?ex=657a869b&is=6568119b&hm=4f42de833de2cd170f0dbd961fa481e867893c978ab7427a67a9add2c4b5f582&">
+        <img class="ariel" src="https://cdn.discordapp.com/attachments/406823279555510272/1179642597065621604/image.png?ex=657a86c7&is=656811c7&hm=25600f0b5c92fea0e2a99fc78590c3d4b4beb544d8dadeb8474bc3ffa6b8e13f&">
+    </div>
+</body>
+</html>
